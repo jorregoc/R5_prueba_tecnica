@@ -5,6 +5,6 @@ url = 'https://raw.githubusercontent.com/jorregoc/R5_prueba_tecnica/main/data_ra
 
 
 df = import_json(url) #importar archivo .json
-df_final = ciclo(df) # procesar archivo
+df_final = normalizar_json(df) # procesar archivo
 
 df_final.to_csv('dataset.csv', index=False) #exportar archivo a .csv
